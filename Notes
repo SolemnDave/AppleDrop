@@ -1,0 +1,23 @@
+Simulating physics in python wiht pygame and pymunk
+
+Pymunk - is a 2D Physics library
+
+1. When using pymunk you must first create a space. A space is where physics is being calculated.
+    - We can create physical objects but the first thing we need is a Body
+    - Body - an atom that is affected by physics.
+    - Body does not have a shape, meaning that it can accept physics but It cannot collide with anything.
+    - You can give the Body a shape allowing to collide with other objects.
+    - Shape - an area around the body that can collide.
+
+Physical Bodies in pymunk
+
+Static Body - A body that doesnt move but other bodies can collide with it.
+Dynamic Body - A body that can be moved by physics.
+Kinematic Body - A body that can be moved by the player (or other non-physical code)
+
+Dynamic Body Three Arguements
+- Mass (weight)
+- Intertia (resistance to movement)
+- body_type (what body type we want)
+
+NOTE - pygame expects integers not floats !
